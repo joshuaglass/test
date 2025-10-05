@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/livekit-client/dist/livekit-client.js"></script>
+</head>
+<body>
+    <h1>Task Manager Agent</h1>
+    <div id="connection-status">
+        <p>Status: <span id="status-text">Disconnected</span></p>
+        <input type="text" id="token-input" placeholder="Enter your LiveKit token">
+        <button id="connect-btn">Connect</button>
+    </div>
+    <div id="chat-container" style="display: none;">
+        <div id="chat-history"></div>
+        <input type="text" id="chat-input" placeholder="Type your message..." disabled>
+        <button id="send-btn" disabled>Send</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
